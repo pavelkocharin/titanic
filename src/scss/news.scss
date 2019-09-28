@@ -1,0 +1,37 @@
+@import 'variables';
+
+.news {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid #e6e6e8;
+  margin: 50px auto;
+  padding-top: 35px;
+  width: 100%;
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &__link {
+    background-color: #ecf1f7;
+    border-radius: 5px;
+    margin: 18px auto 0;
+    padding: 15px 36px 23px;
+    font-family: 'FuturaPTBook';
+    font-size: 30px;
+    text-decoration: none;
+    color: #3d7ab6;
+  }
+
+  &__link:hover {
+    background-color: #dbe5f8;
+  }
+
+  &__link-text {
+    display: block;
+    border-bottom: 2px solid;
+    line-height: 1;
+  }
+}

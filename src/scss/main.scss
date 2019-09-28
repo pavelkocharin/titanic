@@ -1,0 +1,72 @@
+@import 'variables';
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 30px auto;
+  width: 100%;
+  max-width: 1300px;
+
+  &__center {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__center--news {
+    margin-left: -40px;
+  }
+
+  &__center--questions {
+    margin: 35px 0 20px -45px;
+  }
+
+  &__title-block {
+    position: relative;
+    margin: 0 auto;
+  }
+
+  &__title-block:before {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    margin-top: -2px;
+    width: 70px;
+    height: 8px;
+    background-color: $button-color;
+    z-index: 9;
+    content: '';
+  }
+
+  &__title {
+    position: relative;
+    margin: 35px 0 38px 50px;
+    font-family: 'Panton-Bold';
+    font-size: 42px;
+    color: $third-grey;
+    z-index: 10;
+  }
+  
+}
+
+@media (max-width: 1299px) {
+  .main {
+
+    &__title {
+      font-size: 30px;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .main {
+
+    &__title {
+      font-size: 24px;
+    }
+
+    &__title-block {
+      margin: 0 20px;
+    }
+  }
+}

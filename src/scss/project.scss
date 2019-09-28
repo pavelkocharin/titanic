@@ -1,0 +1,72 @@
+@import 'variables';
+
+.project {
+  position: relative;
+  box-sizing: border-box;
+  border-radius: 10px;
+  border: 1px solid #e6e6e8;
+  border-top: 1px solid transparent;
+  width: 100%;
+  min-height: calc(100% - 103px);
+
+  &__img {
+    background-image: url(../img/temp/about.png);
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    width: 100%;
+    min-height: 275px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+
+  &__img:before {
+    position: absolute;
+    top: 0;
+    left:-1px;
+    content: '';
+    background-color:#fff;
+    min-height: 275px;
+    width: 1px;
+  }
+
+  &__title {
+    margin: 40px 0 30px 40px;
+    font-family: 'Panton-Bold';
+    font-size: 30px;
+    color: $third-grey;
+  }
+
+  &__list {
+    margin: 10px 60px 15px 37px;
+    line-height: 25px;
+    list-style: none;
+    font-family: 'FuturaPTBook';
+    font-size: 20px;
+    color: $first-grey;
+    counter-reset: li;
+  }
+
+  &__item {
+    position: relative;
+    display: block;
+    margin: 11px 0;
+    width: 100%;
+  }
+
+  &__item:before {
+    position: absolute;
+    left: -40px;
+    top: 0;
+    display: inline-block;
+    margin-top: 0;
+    list-style-type: decimal-leading-zero;
+    text-align: center;
+    color: $blue-dark;
+    font-family: 'FuturaPTBook';
+    font-size: 17px;
+    content: '0' counter(li)'.';
+    counter-increment: li;
+  }
+}

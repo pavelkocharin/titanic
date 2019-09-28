@@ -1,0 +1,43 @@
+@import 'variables';
+
+.button {
+  display: inline-block;
+  transition: ease .15s;
+  background-color: $button-color;
+  border-radius: 8px;
+  border: none;
+  height: 70px;
+  padding: 0 38px;
+  line-height: 70px;
+  font-family: 'FuturaPTBook';
+  font-size: 30px;
+  text-decoration: none;
+  color: $third-grey;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $button-color-hover;
+    box-shadow: 0 0 2px rgba(255, 196, 4, 0.9);
+  }
+
+  &--popup {
+    margin-top: 20px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 22px;
+  }
+
+  &--tab {
+    margin-left: 80px;
+  }
+}
+
+@media (max-width: 800px) {
+  .button {
+    margin-left: 20px;
+    padding: 10px 25px;
+    height: auto;
+    line-height: 20px;
+    font-size: 18px;
+  }
+}

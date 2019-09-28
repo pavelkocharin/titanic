@@ -1,0 +1,90 @@
+@import 'variables';
+
+.banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 10px;
+  background-image: url(../img/index/banner.png);
+  background-position: 90% 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 40px 0;
+  width: 100%;
+
+  &__title {
+    margin: 5px 0 2px 80px;
+    width: 60%;
+    line-height: 46px;
+    font-family: 'Panton-ExtraBold';
+    font-size: 40px;
+    color: $third-grey;
+  }
+
+  &__text {
+    margin: 0 0 0 80px;
+    width: 60%;
+    line-height: 46px;
+    font-family: 'FuturaPTBook';
+    font-size: 26px;
+    color: $third-grey;
+  }
+
+  &__list {
+    margin: 15px 0 40px 80px;
+    width: 60%;
+    line-height: 30px;
+    list-style: none;
+    font-family: 'FuturaPTBook';
+    font-size: 20px;
+    color: $third-grey;
+  }
+
+  &__item {
+    position: relative;
+  }
+
+  &__item:before {
+    position: absolute;
+    left: -40px;
+    bottom: 0;
+    background-image: url(../img/index/bullet.png);
+    background-repeat: no-repeat;
+    width: 1.25rem;
+    height: 1.25rem;
+    content: '';
+  }
+}
+
+@media (max-width: 800px) {
+  .banner {
+    background-image: url(../img/index/banner-mobile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100% 100%;
+    padding: 25px 20px 30px;
+    width: calc(100% - 40px);
+
+    &__title {
+      margin-top: 0;
+      margin-left: 0px;
+      width: 100%;
+      line-height: 30px;
+      font-size: 24px;
+    }
+
+    &__text {
+      margin: 0;
+      padding-top: 10px;
+      width: 100%;
+      line-height: 20px;
+      font-size: 20px;
+    }
+
+    &__list {
+      font-size: 16px;
+      margin-left: 0;
+      margin-bottom: 20px;
+    }
+  } 
+}

@@ -1,0 +1,73 @@
+@import 'variables';
+
+.mobile-menu-toggler {
+  display: none;
+  margin-top: 28px;
+  cursor: pointer;
+
+  &__open {
+    position: relative;
+    height: 4px;
+    margin-bottom: 8px;
+    border: none;
+    border-radius: 2px;
+    width: 20px;
+    vertical-align: top;
+    background: none;
+    background-color: $third-grey;
+    cursor: pointer;
+
+    &:before,
+    &:after {
+      content: '';
+      position: absolute;
+      right: 0;
+      left: 0;
+      border-radius: 2px;
+      height: 4px;
+      background-color: $third-grey;
+    }
+
+    &:before {
+      bottom: 8px;
+    }
+
+    &:after {
+      top: 8px;
+    }
+  }
+
+  &__close {
+    display: none;
+    margin-top: -8px;
+    border: none;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    vertical-align: top;
+    font-size: 40px;
+    line-height: 20px;
+    background: none;
+    cursor: pointer;
+  }
+
+  &--open {
+    .mobile-menu-toggler__open {
+      display: none;
+    }
+
+    .mobile-menu-toggler__close {
+      display: block;
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .mobile-menu-toggler {
+    display: block;
+
+    &__content {
+      justify-content: space-between;
+    }
+  }
+}

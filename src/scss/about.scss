@@ -1,0 +1,32 @@
+@import 'variables';
+
+.about {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 46px auto 70px;
+
+  &__project {
+    width: 66%;
+  }
+
+  &__author {
+    width: 32.5%;
+    min-height: calc(100% - 123px);
+  }
+}
+
+@media (max-width: 700px) {
+  .about {
+    display: block;
+    margin-top: 0;
+
+    &__project {
+      width: 100%;
+    }
+
+    &__author {
+      width: 100%;
+    }
+  }
+}

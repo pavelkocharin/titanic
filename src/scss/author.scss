@@ -1,0 +1,59 @@
+@import 'variables';
+
+.author {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  border: 1px solid #e6e6e8;
+  height: calc(100% - 103px);
+
+  &__img {
+    background-image: url(../img/temp/author.png);
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    width: 100%;
+    min-height: 275px;
+  }
+
+  &__person-block {
+    position: relative;
+    margin-bottom: 18px;
+    height: 86px;
+  }
+
+  &__person {
+    position: absolute;
+    left: 7%;
+    top: calc(-35% + 6px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #dddfe0;
+    border-radius: 10px;
+    width: 86%;
+  }
+
+  &__name {
+    margin: 27px 30px 0 30px;
+    font-family: 'Panton-Bold';
+    font-size: 24px;
+    color: $third-grey;
+  }
+
+  &__post {
+    margin: 0px 30px 20px 30px;
+    font-family: 'FuturaPTBook';
+    font-size: 18px;
+    color: $first-grey;
+  }
+
+  &__text {
+    margin: 10px 30px;
+    font-family: 'FuturaPTBook';
+    font-size: 20px;
+    line-height: 1.6rem;;
+    color: $first-grey;
+  }
+}

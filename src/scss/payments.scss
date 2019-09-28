@@ -1,0 +1,17 @@
+@import 'variables';
+
+.payments {
+  padding: 15px;
+  background-color: $blue-light;
+  text-align: center;
+
+  &__link {
+    display: inline-block;
+    margin: 0 15px;
+    vertical-align: middle;
+  }
+
+  &__icon {
+
+  }
+}

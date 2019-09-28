@@ -1,0 +1,32 @@
+@import 'variables';
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 60px;
+  margin-right: 45px;
+
+  &__link {
+    text-decoration: none;
+    font-family: 'Panton-ExtraBold';
+    font-size: 18px;
+    color: $third-grey;
+    cursor: pointer;
+  }
+
+  &--footer {
+    justify-content: flex-start;
+    min-height: 0;
+  }
+
+  &__link--footer {
+    margin: 0;
+  }
+}
+
+@media (max-width: 900px) {
+  .logo {
+    margin-right: 10px;
+  }
+}

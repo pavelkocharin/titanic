@@ -1,0 +1,56 @@
+@import 'variables';
+
+.login {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+
+  &__registration {
+    background-color: transparent;
+    border: none;
+    margin-right: 36px;
+    padding: 16px 12px;
+    font-family: 'FuturaPTBook';
+    font-size: 16px;
+    color: #868b91;
+    cursor: pointer;
+  }
+
+  &__registration:hover {
+    margin-top: 3px;
+    border-bottom: 3px solid #dddfe0;
+    color: $third-grey;
+  }
+
+  &__login {
+    background-color: #fff;
+    border: 1px solid #e6e6e8;
+    border-radius: 5px;
+    padding: 8px 25px;
+    font-family: 'FuturaPTBook';
+    font-size: 16px;
+    color: $blue-dark;
+    cursor: pointer;
+    transition: ease .15s;
+  }
+
+  &__login:hover {
+    background-color: rgba(226, 226, 226, .1);
+    border-color:#85add4;
+  }
+}
+
+@media (max-width: 900px) {
+  .login {
+
+    &__registration {
+      margin-right: 10px;
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .login {
+    display: none;
+  }
+}
