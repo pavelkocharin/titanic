@@ -85,6 +85,11 @@ module.exports = {
       template: `${PATHS.src}/index.html`,
       filename: './index.html'
     }),
+    new HtmlWebpackPlugin({
+      hash: false,
+      template: `${PATHS.src}/goals.html`,
+      filename: './goals.html'
+    }),
     // new HtmlWebpackPlugin({
     //   hash: false,
     //   template: `${PATHS.src}/contacts.html`,
