@@ -16,10 +16,11 @@
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 800px) {
   .about {
     display: block;
     margin-top: 0;
+    margin-bottom: 20px;
 
     &__project {
       width: 100%;

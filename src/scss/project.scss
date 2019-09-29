@@ -70,3 +70,26 @@
     counter-increment: li;
   }
 }
+
+
+@media (max-width: 800px) {
+  .project {
+
+    &__img {
+      min-height: 200px;
+    }
+
+    &__title {
+      margin-left: 20px;
+      font-size: 20px;
+    }
+
+    &__list {
+      margin: 10px 20px 15px 20px;
+      line-height: 25px;
+      font-size: 17px;
+      color: $first-grey;
+      counter-reset: li;
+    }
+  }
+}

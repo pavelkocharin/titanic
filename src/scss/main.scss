@@ -62,11 +62,29 @@
   .main {
 
     &__title {
+      margin: 20px 0 25px 20px;
       font-size: 24px;
     }
 
     &__title-block {
       margin: 0 20px;
     }
+
+    &__title-block:before {
+      left: 0;
+      width: 35px;
+      height: 5px;
+    }
+
+    &__center--news,
+    &__center--questions {
+      justify-content: flex-start;
+      margin: 0;
+    }
+
+    &__center--margin {
+      margin-bottom: 20px;
+    }
   }
+
 }

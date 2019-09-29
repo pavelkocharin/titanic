@@ -57,3 +57,37 @@
     color: $first-grey;
   }
 }
+
+
+@media (max-width: 800px) {
+  .author {
+
+    &__img {
+      min-height: 200px;
+      background-image: url(../img/temp/author-mobile.png);
+    }
+
+    &__border {
+      margin-bottom: 30px;
+    }
+
+    &__person-block {
+      margin-bottom: 0;
+      height: 75px;
+    }
+
+    &__person {
+      left: 20px;
+      width: 70%;;
+    }
+
+    &__name {
+      margin-top: 15px;
+    }
+
+    &__text {
+      margin: 10px 20px;
+      font-size: 17px;
+    }
+  }
+}

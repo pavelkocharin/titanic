@@ -63,3 +63,21 @@
     }
   }
 }
+
+@media (max-width: 800px) {
+  .questions-item {
+    &__button {
+      font-size: 18px;
+    }
+
+    &:before {
+      left: -25px;
+      top: 6px;
+    }
+
+    &__answer {
+      margin-left: 0;
+      font-size: 17px;
+    }
+  }
+}

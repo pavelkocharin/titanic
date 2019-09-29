@@ -60,3 +60,35 @@
     }
   }
 }
+
+@media (max-width: 800px) {
+  .footer {
+    &__logo-block {
+      .logo {
+        margin-bottom: 5px;
+      }
+    }
+
+    &__tel {
+      font-size: 18px;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .footer {
+    &__logo-block {
+      margin: 0 auto;
+      .logo--footer {
+        text-align: center;
+      }
+    }
+
+    &__contacts {
+      justify-content: space-between;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+    }
+  }
+}

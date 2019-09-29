@@ -35,3 +35,20 @@
     line-height: 1;
   }
 }
+
+@media (max-width: 700px) {
+  .news {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    padding-top: 0;
+
+    &__link {
+      margin-top: 0;
+      padding: 15px 30px;
+    }
+
+    &__link-text {
+      font-size: 22px;
+    }
+  }
+}

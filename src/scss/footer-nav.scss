@@ -50,6 +50,7 @@
 
     &__item {
       margin-right: 0;
+      margin-bottom: 10px;
       text-align: right;
 
       &:nth-child(n+5) {
@@ -59,6 +60,20 @@
 
     &__item.hide-on-mobile {
       display: none;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .footer-nav {
+    width: 100%;
+    margin: 0 auto;
+    
+    &__list {
+      margin: 15px auto;
+    }
+    &__item {
+      text-align: center;
     }
   }
 }
