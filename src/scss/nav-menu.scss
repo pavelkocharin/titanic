@@ -69,6 +69,7 @@
 
     &--open {
       transform: translateY(0);
+      max-width: 100%;
     }
 
     &__list {

@@ -67,16 +67,24 @@
 @media (max-width: 800px) {
   .questions-item {
     &__button {
+      line-height: 30px;
       font-size: 18px;
+
+      
+      &:after {
+        top: 5px;
+        margin-left: 10px;
+      }
     }
 
     &:before {
-      left: -25px;
-      top: 6px;
-    }
+        left: -20px;
+        top: 5px;
+      }
+
 
     &__answer {
-      margin-left: 0;
+      margin: 10px 0;
       font-size: 17px;
     }
   }
