@@ -46,7 +46,13 @@
     color: $third-grey;
     z-index: 10;
   }
-  
+
+  &__sub-title {
+    margin: 20px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: normal;
+  }
 }
 
 @media (max-width: 1299px) {

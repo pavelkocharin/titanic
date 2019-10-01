@@ -1,0 +1,66 @@
+@import 'variables';
+
+.content {
+  display: block;
+  max-width: 960px;
+  min-height: calc(100vh - 352px);
+  padding-top: 20px;
+  line-height: 1.5;
+
+  h1 {
+    margin: 10px 0 10px 0;
+    padding: 0 40px 0 0;
+    text-align: center;
+    line-height: 1;
+    font-family: 'Panton-Bold';
+    font-size: 42px;
+    color: $third-grey;
+    z-index: 10;
+
+    &:before {
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: -20px;
+      width: 70px;
+      height: 8px;
+      background-color: $button-color;
+      content: '';
+    }
+
+    span {
+      position: relative;
+    }
+  }
+
+  h3 {
+    margin: 30px 0;
+    padding: 0;
+    text-align: center;
+    font-size: 20px;
+    font-weight: normal;
+  }
+
+  p {
+    margin: 10px 0;
+    line-height: 1.7;
+  }
+
+  .inner-link,
+  a {
+    padding: 0;
+    border: none;
+    font-size: 1em;
+    text-decoration: underline;
+    background: none;
+    color: $blue-dark;
+    cursor: pointer;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  .tab {
+    margin: 30px 0;
+  }
+}

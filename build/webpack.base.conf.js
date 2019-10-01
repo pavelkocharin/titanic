@@ -90,66 +90,16 @@ module.exports = {
       template: `${PATHS.src}/goals.html`,
       filename: './goals.html'
     }),
-    // new HtmlWebpackPlugin({
-    //   hash: false,
-    //   template: `${PATHS.src}/contacts.html`,
-    //   filename: './contacts.html'
-    // }),
-    // new HtmlWebpackPlugin({
-    //   hash: false,
-    //   template: `${PATHS.src}/goals.html`,
-    //   filename: './goals.html'
-    // }),
-    // new HtmlWebpackPlugin({
-    //   hash: false,
-    //   template: `${PATHS.src}/invalid-payment.html`,
-    //   filename: './invalid-payment.html'
-    // }),
-    // new HtmlWebpackPlugin({
-    //   hash: false,
-    //   template: `${PATHS.src}/success-payment.html`,
-    //   filename: './success-payment.html'
-    // }),
-    // new HtmlWebpackPlugin({
-    //   hash: false,
-    //   template: `${PATHS.src}/text-article.html`,
-    //   filename: './text-article.html'
-    // }),
-    // new HtmlWebpackPlugin({
-    //   hash: false,
-    //   template: `${PATHS.src}/user-agreement.html`,
-    //   filename: './user-agreement.html'
-    // }),
-    // new HtmlWebpackPlugin({
-    //   hash: false,
-    //   template: `${PATHS.src}/privacy-policy.html`,
-    //   filename: './privacy-policy.html'
-    // }),
-    // new HtmlWebpackPlugin({
-    //   hash: false,
-    //   template: `${PATHS.src}/wellcome.html`,
-    //   filename: './wellcome.html'
-    // }),
-    // new HtmlWebpackPlugin({
-    //   hash: false,
-    //   template: `${PATHS.src}/profile.html`,
-    //   filename: './profile.html'
-    // }),
-    // new HtmlWebpackPlugin({
-    //   hash: false,
-    //   template: `${PATHS.src}/privacy-policy.html`,
-    //   filename: './privacy-policy.html'
-    // }),
-    // new HtmlWebpackPlugin({
-    //   hash: false,
-    //   template: `${PATHS.src}/payment.html`,
-    //   filename: './payment.html'
-    // }),
-    // new HtmlWebpackPlugin({
-    //   hash: false,
-    //   template: `${PATHS.src}/news.html`,
-    //   filename: './news.html'
-    // }),
+    new HtmlWebpackPlugin({
+      hash: false,
+      template: `${PATHS.src}/contacts.html`,
+      filename: './contacts.html'
+    }),
+    new HtmlWebpackPlugin({
+      hash: false,
+      template: `${PATHS.src}/lk.html`,
+      filename: './lk.html'
+    }),
     new CopyWebpackPlugin([
       { from: `${PATHS.src}/img`, to: `${PATHS.assets}img` },
       { from: `${PATHS.src}/static`, to: '' },

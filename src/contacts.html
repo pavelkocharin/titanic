@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <title>Моицели.рф</title>
+  <meta charset="utf-8">
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body class="body-page">
+
+<header class="header">
+  <div class="header__content">
+
+    <div class="logo">
+      <a href="index.html" class="logo__link">Моицели.рф</a>
+    </div>
+
+    <nav class="nav-menu">
+      <ul class="nav-menu__list">
+        <li class="nav-menu__item">
+          <a href="index.html" class="nav-menu__link">ГЛАВНАЯ</a>
+        </li>
+        <li class="nav-menu__item">
+          <a href="goals.html" class="nav-menu__link">ВАШИ ЦЕЛИ</a>
+        </li>
+        <li class="nav-menu__item nav-menu__item--active">
+          <a href="contacts.html" class="nav-menu__link">КОНТАКТЫ</a>
+        </li>
+        <li class="nav-menu__item show-on-mobile">
+          <button class="nav-menu__link" type="button" data-popup-open="popup-registration">
+            Регистрация
+          </button>
+        </li>
+        <li class="nav-menu__item show-on-mobile">
+          <button class="nav-menu__link" type="button" data-popup-open="popup-login">
+            Войти
+          </button>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="login">
+      <button class="login__registration" type="button" data-popup-open="popup-registration">
+        Регистрация
+      </button>
+      <button class="login__login" type="button" data-popup-open="popup-login">
+        Войти
+      </button>
+    </div>
+
+    <div class="mobile-menu-toggler">
+      <button type="button" class="mobile-menu-toggler__open"></button>
+      <button type="button" class="mobile-menu-toggler__close">&times;</button>
+    </div>
+  </div>
+</header>
+
+<main class="main content">
+  <h1>Пример заголовка</h1>
+
+  <h3>
+    Подзаголовок ipsum dolor, sit amet consectetur adipisicing elit.
+  </h3>
+
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique eius dolor est minima quos animi corporis doloremque ipsum excepturi! Rem sit velit dignissimos eligendi magnam blanditiis porro repellat tempore debitis!</p>
+
+  <p>Doloribus, quaerat ipsum? Ullam assumenda adipisci non id provident facilis, earum quibusdam eum sunt sint dolores eveniet, sapiente repudiandae rerum laudantium dolorum?Maxime quo praesentium accusantium id a aspernatur ut earum, nostrum error, ab blanditiis, quasi iure ad assumenda repellat quae cum vitae saepe. Facilis, sunt tempore modi ipsam non magni debitis.Doloribus, quaerat ipsum? Ullam assumenda adipisci non id provident facilis, earum quibusdam eum sunt sint dolores eveniet, sapiente repudiandae rerum laudantium dolorum?Maxime quo praesentium accusantium id a aspernatur ut earum, nostrum error, ab blanditiis, quasi iure ad assumenda repellat quae cum vitae saepe. Facilis, sunt tempore modi ipsam non magni debitis.</p>
+</main>
+
+<footer class="footer">
+  <div class="footer__top">
+    <div class="footer__logo-block">
+      <div class="logo logo--footer">
+        <a href="index.html" class="logo__link logo__link--footer">Моицели.рф</a>
+      </div>
+      <span class="footer__text">© 2019, моицели.рф</span>
+    </div>
+
+    <nav class="footer-nav">
+      <ul class="footer-nav__list">
+        <li class="footer-nav__item hide-on-mobile">
+          <a href="index.html" class="footer-nav__link">ГЛАВНАЯ</a>
+        </li>
+        <li class="footer-nav__item hide-on-mobile">
+          <a href="goals.html" class="footer-nav__link">ВАШИ ЦЕЛИ</a>
+        </li>
+        <li class="footer-nav__item hide-on-mobile">
+          <a href="text-article.html" class="footer-nav__link">СТАТЬИ</a>
+        </li>
+        <li class="footer-nav__item hide-on-mobile">
+          <a href="contacts.html" class="footer-nav__link">КОНТАКТЫ</a>
+        </li>
+        <li class="footer-nav__item">
+          <a href="#" class="footer-nav__link">ПОЛЬЗОВАТЕЛЬСКОЕ СОГЛАШЕНИЕ</a>
+        </li>
+        <li class="footer-nav__item">
+          <a href="#" class="footer-nav__link">ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="footer__contacts">
+      <a href="mailto:moicelirf@gmail.com" class="footer__text">moicelirf@gmail.com</a>
+
+      <tel class="footer__tel">
+        8 800 555-35-35
+      </tel>
+    </div>
+  </div>
+
+</footer>
+
+<div class="payments">
+  <a href="#" class="payments__link">
+    <img src="./img/payments/yandexkassa.png" alt="яндекс-касса" class="payments__icon">
+  </a>
+  <a href="#" class="payments__link">
+    <img src="./img/payments/robokassa.png" alt="робокасса" class="payments__icon">
+  </a>
+  <a href="#" class="payments__link">
+    <img src="./img/payments/webmoney.png" alt="webmoney" class="payments__icon">
+  </a>
+  <a href="#" class="payments__link">
+    <img src="./img/payments/visa.png" alt="visa" class="payments__icon">
+  </a>
+  <a href="#" class="payments__link">
+    <img src="./img/payments/mastercard.png" alt="mastercard" class="payments__icon">
+  </a>
+  <a href="#" class="payments__link">
+    <img src="./img/payments/mir.png" alt="платежная система Мир" class="payments__icon">
+  </a>
+</div>
+
+
+
+
+<div class="popup" id="popup-registration">
+  <div class="popup__overlay js-popup-close"></div>
+  <div class="popup__body">
+    <button type="button" class="popup__close js-popup-close">&times;</button>
+    <h3 class="popup__title">Регистрация</h3>
+
+    <form class="form" action="#" method="POST">
+      <input type="email" name="usermail"  placeholder="E-mail" autocomplete="off" class="form__error-field" />
+      <input type="password" name="password" placeholder="Пароль" autocomplete="off" />
+      <input type="password" name="password"  placeholder="Пароль ещё раз" autocomplete="off" />
+      <p class="form__error-block form__error-block--visible">
+        Заполните все поля
+      </p>
+
+      <button class="button button--popup" type="submit">
+        Продолжить
+      </button>
+    </form>
+  </div>
+</div>
+
+<div class="popup" id="popup-login">
+  <div class="popup__overlay js-popup-close"></div>
+  <div class="popup__body">
+    <button type="button" class="popup__close js-popup-close">&times;</button>
+    <h3 class="popup__title">Вход</h3>
+
+    <form class="form" action="#" method="POST">
+      <input type="email" name="usermail"  placeholder="E-mail" autocomplete="off" />
+      <input type="password" name="password" placeholder="Пароль" autocomplete="off" />
+
+      <p class="form__error-block">
+
+      </p>
+
+      <button class="button button--popup" type="submit">
+        Войти
+      </button>
+
+      <div class="popup__tab">
+        <button
+          class="popup__inner-link"
+          type="button"
+          data-popup-open="popup-restore-password">
+          Забыли пароль?
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<div class="popup" id="popup-restore-password">
+  <div class="popup__overlay js-popup-close"></div>
+  <div class="popup__body">
+    <button type="button" class="popup__close js-popup-close">&times;</button>
+    <h3 class="popup__title">Восстановление пароля</h3>
+
+    <form class="form" action="#" method="POST">
+      <input type="email" name="usermail"  placeholder="E-mail" autocomplete="off" />
+
+      <p class="form__error-block">
+
+      </p>
+
+      <button class="button button--popup" type="submit">
+        Далее
+      </button>
+    </form>
+  </div>
+</div>
+
+<div class="popup" id="popup-password-restored">
+    <div class="popup__overlay js-popup-close"></div>
+    <div class="popup__body">
+      <button type="button" class="popup__close js-popup-close">&times;</button>
+      <h3 class="popup__title">Восстановление пароля</h3>
+
+      <p>На ваш электронный адрес отправлен новый пароль</p>
+
+      <a href="index.html" class="button button--popup">
+        Перейти на сайт
+      </a>
+    </div>
+  </div>
+
+<div class="popup" id="popup-data-saved">
+  <div class="popup__overlay js-popup-close"></div>
+  <div class="popup__body">
+    <button type="button" class="popup__close js-popup-close">&times;</button>
+    <p>Данные сохранены</p>
+
+    <button class="button button--popup js-popup-close">
+      Продолжить
+    </button>
+  </div>
+</div>
+
+<div class="popup" id="popup-need-to-register">
+  <div class="popup__overlay js-popup-close"></div>
+  <div class="popup__body">
+    <button type="button" class="popup__close js-popup-close">&times;</button>
+    <p class="main__goals-status-text">
+      Для участия необходимо
+      <button class="popup__inner-link" type="button" data-popup-open="popup-registration">зарегистрироваться</button> <br>
+      (или выполнить
+      <button class="popup__inner-link" type="button" data-popup-open="popup-login">вход</button>)
+      и иметь положительный баланс.
+    </p>
+
+    <button class="button button--popup js-popup-close">
+      Продолжить
+    </button>
+  </div>
+</div>
+
+</body>
+</html>

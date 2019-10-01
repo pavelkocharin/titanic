@@ -1,0 +1,43 @@
+@import 'variables';
+
+.current-level {
+  display: flex;
+  margin: 30px 0;
+  border: 1px solid $border-color;
+  border-radius: 10px;
+  background-color: $light-grey;
+
+  &__col {
+    padding: 20px 30px;
+  }
+
+  &__col + &__col {
+    border-left: 1px solid $border-color;
+  }
+
+  &__title {
+    position: relative;
+
+    &:before {
+      position: absolute;
+      left: -30px;
+      top: 10px;
+      width: 20px;
+      height: 3px;
+      background-color: $button-color;
+      content: '';
+    }
+  }
+
+  &__value {
+    margin-left: 5px;
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 1;
+    color: $green;
+  }
+
+  &__desc {
+    margin-top: 10px;
+  }
+}

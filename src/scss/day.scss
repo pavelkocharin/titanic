@@ -1,0 +1,80 @@
+@import 'variables';
+
+.day {
+  border-radius: 10px;
+  border: 1px solid $border-color;
+  padding: 10px 25px;
+
+  &--open {
+    background-color: $light-grey;
+
+    .day__row {
+      margin-bottom: 20px;
+      border-bottom: 1px solid $border-color;
+      padding-bottom: 10px;
+    }
+  }
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    white-space: nowrap;
+  }
+
+  &__title {
+    margin-right: 1%;
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 1;
+    color: $third-grey;
+  }
+
+  &__date {
+    margin: 0 1%;
+    font-size: 15px;
+  }
+
+  &__progress {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 1%;
+    min-width: 440px;
+
+    &-title {
+      width: 100px;
+      font-size: 14px;
+    }
+
+    &-item {
+      box-sizing: border-box;
+      margin: 3px;
+      border-radius: 50%;
+      border: 1px solid $border-color;
+      width: 14px;
+      height: 14px;
+      background-color: transparent;
+
+      &--active {
+        border: none;
+        background-color: $green;
+      }
+    }
+  }
+
+  &__points {
+    margin: 0 1%;
+    text-align: center;
+    font-size: 14px;
+
+    &-value {
+      display: block;
+      font-weight: bold;
+      color: $green;
+    }
+  }
+
+  &__actions {
+
+  }
+}

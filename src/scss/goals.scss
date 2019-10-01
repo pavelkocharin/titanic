@@ -1,0 +1,28 @@
+@import 'variables';
+
+.goals {
+  margin: 70px 0 20px;
+
+  &__title {
+    margin: 10px 0 10px 0;
+    text-align: center;
+    line-height: 1;
+    font-family: 'Panton-Bold';
+    font-size: 42px;
+    color: $third-grey;
+  }
+
+  &__note {
+    margin: 20px 0 30px;
+    text-align: center;
+  }
+
+  &__minimize-all {
+    margin: 10px 0 20px 0;
+    text-align: right;
+
+    .button {
+      text-decoration: underline;
+    }
+  }
+}

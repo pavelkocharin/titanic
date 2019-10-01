@@ -1,0 +1,76 @@
+@import 'variables';
+
+.day-details {
+  &>p:first-child {
+    margin-bottom: 20px;
+  }
+
+  &__item {
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border: 1px solid $border-color;
+    padding: 20px 25px 15px;
+    background-color: #fff;
+  }
+
+  .day-details__item h3 {
+    margin: 0 0 10px 0;
+    text-align: left;
+    font-size: 22px;
+    font-weight: bold;
+  }
+
+  .day-details__item h4 {
+    margin: 0 0 10px 0;
+    text-align: left;
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  .checkbox {
+    margin-bottom: 10px;
+
+    input {
+      display: none;
+    }
+
+    label {
+      display: block;
+      position: relative;
+      padding: 0 0 0 30px;
+
+      &:before {
+        position: absolute;
+        top: 4px;
+        left: 0;
+        border-radius: 3px;
+        width: 16px;
+        height: 16px;
+        background-color: #dddfe0;
+        background-repeat: no-repeat;
+        background-size: cover;
+        content: '';
+      }
+    }
+
+    input:checked + label:before {
+      background-color: $blue;
+      background-image: url(../img/checkbox.png);
+    }
+  }
+
+  &__columns {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  &__col {
+    width: 48%;
+  }
+
+  .slider {
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+}
