@@ -85,10 +85,21 @@
     }
 
     &__contacts {
-      justify-content: space-between;
+      justify-content: center;
       margin: 0;
       padding: 0;
       width: 100%;
+    }
+  }
+}
+
+@media (max-width: 380px) {
+  .footer {
+    &__tel {
+      margin-left: 0;
+    }
+    &__text {
+      margin-right: 15px;
     }
   }
 }

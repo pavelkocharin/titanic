@@ -1,0 +1,13 @@
+@import 'variables';
+
+.select-container {
+  font-family: 'FuturaPTBook';
+  font-size: 20px;
+  color: $first-grey;
+
+  & select {
+    font-family: 'FuturaPTBook';
+    font-size: 18px;
+    color: $first-grey;
+  }
+}

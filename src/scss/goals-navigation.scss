@@ -55,3 +55,12 @@
     }
   }
 }
+
+@media (max-width: 700px) {
+  .goals-navigation {
+    &__item[href] {
+      margin: 0 1.5vw;
+      font-size: 15px;
+    }
+  }
+}

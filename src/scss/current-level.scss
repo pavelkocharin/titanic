@@ -41,3 +41,15 @@
     margin-top: 10px;
   }
 }
+
+@media (max-width: 700px) {
+  .current-level {
+    display: block;
+    padding-left: 20px;
+
+    &__col + &__col {
+      padding-top: 0;
+      border-left: none;
+    }
+  }
+}

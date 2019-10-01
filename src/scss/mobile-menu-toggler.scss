@@ -2,6 +2,8 @@
 
 .mobile-menu-toggler {
   display: none;
+  position: relative;
+  z-index: 110;
   margin-top: 28px;
   cursor: pointer;
 
@@ -48,6 +50,7 @@
     font-size: 40px;
     line-height: 20px;
     background: none;
+    color: #fff;
     cursor: pointer;
   }
 

@@ -22,6 +22,10 @@
       box-shadow: 0 0 2px rgba(255, 196, 4, 0.9);
     }
 
+    &--margin-bottom {
+      margin: 17px 0 13px !important;
+    }
+
     &--popup {
       margin-top: 20px;
       height: 60px;
@@ -93,13 +97,17 @@
   }
 
   @media (max-width: 800px) {
-    .button {
+    .button:not(.button--tiny):not(.button--small):not(.button--no-border) {
       margin-left: 0;
       padding: 15px 30px;
       height: auto;
       line-height: 20px;
       font-size: 22px;
-    }
 
+      &--small {
+        font-size: 20px;
+        padding: 20px 42px;
+      }
+    }
   }
 }
