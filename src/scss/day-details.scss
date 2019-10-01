@@ -1,6 +1,8 @@
 @import 'variables';
 
 .day-details {
+  display: none;
+
   &>p:first-child {
     margin-bottom: 20px;
   }
@@ -73,4 +75,46 @@
     margin-top: 20px;
     margin-bottom: 10px;
   }
+
+  &__prize {
+    margin: 20px 0;
+    border-radius: 10px;
+    padding: 15px 30px 10px 30px;
+    background-color: $green;
+    text-align: center;
+    color: #fff;
+
+    &-title {
+      font-size: 20px;
+    }
+
+    &-code {
+      display: inline-block;
+      margin-left: 5px;
+      border-radius: 3px;
+      padding: 3px 12px;
+      background-color: $green-dark;
+    }
+  }
+
+  &__controls {
+    margin: 20px auto;
+    max-width: 500px;
+    text-align: center;
+    font-size: 18px;
+
+    &-column {
+      display: inline-block;
+      vertical-align: top;
+      max-width: 250px;
+    }
+
+    .button {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.day--open .day-details {
+  display: block;
 }

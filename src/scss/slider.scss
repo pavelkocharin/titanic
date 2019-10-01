@@ -11,6 +11,7 @@
     background: none;
     color: $third-grey;
     cursor: pointer;
+    outline: none;
   }
 
   &__values {
@@ -33,6 +34,7 @@
     color: $first-grey;
     transition: all .3s;
     cursor: pointer;
+    outline: none;
 
     &:hover:not(.slider__item--active) {
       border: 1px solid $border-color;

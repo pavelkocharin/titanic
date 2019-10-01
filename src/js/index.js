@@ -1,3 +1,5 @@
 import './faq.js'
 import './popups.js'
 import './mobile-navigation.js'
+import './goals.js'
+import './slider.js'

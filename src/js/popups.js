@@ -4,7 +4,7 @@
 var popups = document.querySelectorAll('.popup');
 var popupsArr = Array.prototype.slice.call(popups);
 
-openPopupClass = 'popup--open';
+var openDayClass = 'popup--open';
 
 /**
  * Обработчики открытия модалов
@@ -16,7 +16,7 @@ openLinksArr.forEach(function(link) {
   link.addEventListener('click', function(){
     var id = this.getAttribute('data-popup-open');
 
-    openPopup(id);
+    openDay(id);
   });
 });
 
@@ -33,24 +33,24 @@ closeLinksArr.forEach(function(link) {
 /**
  * Открыть определенный попап
  */
-function openPopup(id) {
+function openDay(id) {
   var popup = document.getElementById(id);
 
   if (popup) {
     closeAllPopups();
-    popup.classList.add(openPopupClass);
+    popup.classList.add(openDayClass);
   }
 }
 
 /**
  * Закрыть определенный попап
  */
-function closePopup(id) {
+function closeDay(id) {
   var popup = document.getElementById(id);
 
   if (popup) {
     closeAllPopups();
-    popup.classList.remove(openPopupClass);
+    popup.classList.remove(openDayClass);
   }
 }
 
@@ -59,6 +59,6 @@ function closePopup(id) {
  */
 function closeAllPopups() {
   popupsArr.forEach(function(popup) {
-    popup.classList.remove(openPopupClass);
+    popup.classList.remove(openDayClass);
   });
 }
