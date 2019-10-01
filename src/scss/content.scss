@@ -4,7 +4,7 @@
   display: block;
   max-width: 960px;
   min-height: calc(100vh - 352px);
-  padding-top: 20px;
+  padding-top: 15px;
   line-height: 1.5;
 
   h1 {
@@ -33,23 +33,26 @@
   }
 
   h3 {
-    margin: 30px 0;
+    margin: 30px 0 35px;
     padding: 0;
     text-align: center;
-    font-size: 20px;
-    font-weight: normal;
+    line-height: 30px;
+    font-size: 24px;
+    font-family: 'FuturaPTBook';
   }
 
   p {
     margin: 10px 0;
-    line-height: 1.7;
+    line-height: 30px;
+    font-size: 20px;
+    font-family: 'FuturaPTBook';
   }
 
   .inner-link,
   a {
     padding: 0;
     border: none;
-    font-size: 1em;
+    font-size: 1.15em;
     text-decoration: underline;
     background: none;
     color: $blue-dark;
@@ -62,5 +65,38 @@
 
   .tab {
     margin: 30px 0;
+  }
+}
+
+@media (max-width: 700px) {
+  .content {
+    padding-top: 0;
+    margin-top: 18px;
+
+    h1 {
+      margin: 2px 20px;
+      padding: 0 40px 0 0;
+      line-height: 50px;
+      font-size: 24px;
+
+        &:before {
+        margin-right: -15px;
+        width: 40px;
+        height: 4px;
+      }
+    }
+
+    h3 {
+      margin: 5px 40px 20px;
+      line-height: 24px;
+      font-size: 20px;
+    }
+
+    p {
+      margin: 10px 20px;
+      line-height: 24px;
+      font-size: 17px;
+      font-family: 'FuturaPTBook';
+    }
   }
 }

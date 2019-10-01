@@ -1,70 +1,82 @@
 @import 'variables';
 
-.button {
-  display: inline-block;
-  box-sizing: border-box;
-  transition: ease .15s;
-  background-color: $button-color;
-  border-radius: 8px;
-  border: none;
-  height: 70px;
-  padding: 15px 38px;
-  line-height: 40px;
-  font-family: 'FuturaPTBook';
-  font-size: 30px;
-  text-decoration: none;
-  color: $third-grey;
-  cursor: pointer;
-
-  &:hover {
-    background-color: $button-color-hover;
-    box-shadow: 0 0 2px rgba(255, 196, 4, 0.9);
-  }
-
-  &--popup {
-    margin-top: 20px;
-    height: 60px;
-    line-height: 30px;
-    font-size: 22px;
-  }
-
-  &--small {
-    height: 60px;
-    line-height: 30px;
-    font-size: 22px;
-  }
-
-  &--tiny {
-    height: auto;
-    border-radius: 5px;
-    padding: 10px 25px;
-    line-height: 15px;
-    font-size: 15px;
-  }
-
-  &--tab {
-    margin-left: 80px;
-  }
-
-  &--basic {
-    border: 1px solid $border-color;
-    background-color: #fff;
-    color: $first-grey;
+.body-page {
+  .button {
+    display: inline-block;
+    box-sizing: border-box;
+    transition: ease .15s;
+    background-color: $button-color;
+    border-radius: 8px;
+    border: none;
+    height: 70px;
+    padding: 15px 38px;
+    line-height: 40px;
+    font-family: 'FuturaPTBook';
+    font-size: 30px;
+    text-decoration: none;
+    color: $third-grey;
+    cursor: pointer;
 
     &:hover {
-      background-color: #eee;
-      box-shadow: none;
+      background-color: $button-color-hover;
+      box-shadow: 0 0 2px rgba(255, 196, 4, 0.9);
+    }
+
+    &--margin-bottom {
+      margin: 17px 0 13px !important;
+    }
+
+    &--popup {
+      margin-top: 20px;
+      height: 60px;
+      line-height: 30px;
+      font-size: 22px;
+    }
+
+    &--small {
+      height: 60px;
+      line-height: 30px;
+      font-size: 22px;
+    }
+
+    &--tiny {
+      height: auto;
+      border-radius: 5px;
+      padding: 10px 25px;
+      line-height: 15px;
+      font-size: 15px;
+    }
+
+    &--tab {
+      margin-left: 80px;
+    }
+
+    &--basic {
+      border: 1px solid $border-color;
+      background-color: #fff;
+      color: $first-grey;
+
+      &:hover {
+        background-color: #eee;
+        box-shadow: none;
+      }
     }
   }
-}
 
-@media (max-width: 800px) {
-  .button {
-    margin-left: 0;
-    padding: 15px 30px;
-    height: auto;
-    line-height: 20px;
-    font-size: 22px;
+  @media (max-width: 800px) {
+    .button {
+      margin-left: 0;
+      padding: 15px 30px;
+      height: auto;
+      line-height: 20px;
+      font-size: 22px;
+
+      &--small {
+        font-size: 20px;
+        padding: 20px 42px;
+      }
+    }
+
   }
-
 }
+

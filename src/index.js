@@ -32,6 +32,7 @@ import './scss/slider.scss'
 import './scss/variables.scss'
 import './scss/user-greetings.scss'
 import './scss/content.scss'
+import './scss/select-container.scss'
 
 //JS
 import './js/index.js'

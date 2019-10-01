@@ -11,9 +11,11 @@
   &__error-block {
     display: none;
     margin: 10px;
-    padding-left: 20px;
+    padding-left: 10px;
     text-align: left;
     color: $error-color;
+    font-family: 'FuturaPTBook';
+    font-size: 18px;
 
     &--visible {
       display: block;
@@ -31,10 +33,11 @@
     border: 1px solid $border-color;
     border-radius: 5px;
     width: 100%;
-    padding: 15px 20px;
+    padding: 15px 20px 14px;
     line-height: 20px;
-    font-family: inherit;
-    font-size: 15px;
+    font-family: 'FuturaPTBook';
+    font-size: 18px;
+    color: $second-grey;
     background-color: $blue-bg;
   }
 
