@@ -32,19 +32,24 @@
     }
   }
 
+  &__title-goals {
+    margin-top: 0 !important;
+  }
+
   h3 {
-    margin: 30px 0 35px;
+    margin: 30px 0 40px;
     padding: 0;
     text-align: center;
     line-height: 30px;
     font-size: 24px;
+    font-weight: normal;
     font-family: 'FuturaPTBook';
   }
 
   p {
     margin: 10px 0;
     line-height: 30px;
-    font-size: 20px;
+    font-size: 18px;
     font-family: 'FuturaPTBook';
   }
 
@@ -52,8 +57,10 @@
   a {
     padding: 0;
     border: none;
-    font-size: 1.15em;
+    font-family: 'FuturaPTBook';
+    font-size: 18px;
     text-decoration: underline;
+    text-decoration-skip-ink: none;
     background: none;
     color: $blue-dark;
     cursor: pointer;
@@ -64,7 +71,10 @@
   }
 
   .tab {
-    margin: 30px 0;
+    margin: 18px 20px 25px;
+    font-family: 'FuturaPTBook';
+    font-size: 18px;
+    line-height: 25px;
   }
 }
 
@@ -97,6 +107,16 @@
       line-height: 24px;
       font-size: 17px;
       font-family: 'FuturaPTBook';
+    }
+
+    .inner-link,
+    a {
+      font-size: 17px;
+    }
+
+    .tab {
+      font-size: 17px;
+      margin: 8px 20px 25px;
     }
   }
 }

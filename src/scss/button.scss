@@ -44,7 +44,7 @@
       border-radius: 5px;
       padding: 10px 25px;
       line-height: 15px;
-      font-size: 15px;
+      font-size: 16px;
     }
 
     &--tab {
@@ -74,6 +74,7 @@
       line-height: 1;
       text-decoration: underline;
       background: transparent;
+      color: $first-grey;
 
       &:hover {
         box-shadow: none;
@@ -97,6 +98,18 @@
   }
 
   @media (max-width: 800px) {
+    .button {
+      &--big-text {
+        font-size: 30px !important;
+        padding: 20px 35px !important;
+      }
+
+      &--small-text {
+        font-size: 20px !important;
+        padding: 20px 35px !important;
+      }
+    }
+
     .button:not(.button--tiny):not(.button--small):not(.button--no-border) {
       margin-left: 0;
       padding: 15px 30px;

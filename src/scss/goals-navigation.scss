@@ -1,7 +1,7 @@
 @import 'variables';
 
 .goals-navigation {
-  margin: 20px 0;
+  margin: 12px 0 20px;
   text-align: center;
 
   &__item[href] {
@@ -24,15 +24,16 @@
   }
 
   &__dates {
-    font-size: 14px;
+    font-size: 15px;
+    line-height: 20px;
     color: $second-grey;
   }
 
   &__prev:after,
   &__next:after {
     position: absolute;
-    top: -10px;
-    font-size: 35px;
+    top: 0px;
+    font-size: 25px;
     line-height: 1;
   }
 
@@ -58,9 +59,17 @@
 
 @media (max-width: 700px) {
   .goals-navigation {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 40px;
+
     &__item[href] {
       margin: 0 1.5vw;
       font-size: 15px;
+    }
+
+    &__title {
+      font-size: 18px;
     }
   }
 }

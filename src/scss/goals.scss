@@ -1,7 +1,12 @@
 @import 'variables';
 
 .goals {
-  margin: 70px 0 20px;
+  margin: 75px 0 20px;
+
+  &__mF {
+    line-height: 25px !important;
+    margin: 10px 20px 5px !important;
+  }
 
   &__title {
     margin: 10px 0 10px 0;
@@ -13,12 +18,15 @@
   }
 
   &__note {
-    margin: 20px 0 30px;
+    margin: 20px 0 35px;
     text-align: center;
+    font-family: 'FuturaPTBook';
+    font-size: 18px;
+    line-height: 25px;
   }
 
   &__minimize-all {
-    margin: 10px 0 20px 0;
+    margin: 10px 20px 20px 20px;
     text-align: right;
 
     .button {
@@ -32,12 +40,17 @@
     margin-top: 30px;
 
     &__title {
-      font-size: 30px;
+      font-size: 24px;
     }
 
     &__note {
-      margin-right: 30px;
-      margin-left: 30px;
+      margin: 5px 30px 15px;
+      font-size: 17px;
+      line-height: 24px;
+    }
+
+    &__mF {
+      font-size: 18px !important;
     }
 
     &__minimize-all {

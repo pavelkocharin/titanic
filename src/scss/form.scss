@@ -72,10 +72,23 @@
   }
 
   textarea {
+    margin-top: 20px;
     height: 125px;
   }
 
   & &__error-field {
     border-color: $error-color;
+  }
+}
+
+@media (max-width: 700px) {
+  .form {
+    & [type=text],
+    & [type=email],
+    & [type=password],
+    & select,
+    textarea {
+      font-size: 17px;
+    }
   }
 }

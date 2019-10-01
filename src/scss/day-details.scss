@@ -4,7 +4,9 @@
   display: none;
 
   &>p:first-child {
-    margin-bottom: 20px;
+    font-size: 18px;
+    line-height: 25px;
+    margin-bottom: 20px !important;
   }
 
   &__item {
@@ -15,22 +17,32 @@
     background-color: #fff;
   }
 
+  .day-details__item p {
+    margin: 5px 0 10px !important;
+    font-size: 18px;
+    line-height: 25px;
+  }
+
   .day-details__item h3 {
-    margin: 0 0 10px 0;
+    margin: 5px 0 7px 0;
     text-align: left;
+    font-family: 'Panton-Bold';
     font-size: 22px;
-    font-weight: bold;
+    line-height: 30px;
+    color: $third-grey;
   }
 
   .day-details__item h4 {
-    margin: 0 0 10px 0;
+    margin: 5px 0 5px 0;
     text-align: left;
+    font-family: 'Panton-Bold';
     font-size: 18px;
-    font-weight: bold;
+    line-height: 30px;
+    color: $third-grey;
   }
 
   .checkbox {
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 
     input {
       display: none;
@@ -40,10 +52,12 @@
       display: block;
       position: relative;
       padding: 0 0 0 30px;
+      font-size: 18px;
+      font-family: 'FuturaPTBook';
 
       &:before {
         position: absolute;
-        top: 4px;
+        top: 6px;
         left: 0;
         border-radius: 3px;
         width: 16px;
@@ -77,15 +91,21 @@
   }
 
   &__prize {
-    margin: 20px 0;
+    margin: 20px 0 28px;
     border-radius: 10px;
-    padding: 15px 30px 10px 30px;
+    padding: 12px 30px 2px 30px;
     background-color: $green;
     text-align: center;
     color: #fff;
 
+    &__text {
+      font-size: 18px !important;
+    }
+
     &-title {
-      font-size: 20px;
+      font-size: 24px;
+      line-height: 30px;
+      font-family: 'FuturaPTBook';
     }
 
     &-code {
@@ -95,6 +115,10 @@
       padding: 3px 12px;
       background-color: $green-dark;
     }
+  }
+
+  &__prize-code {
+    font-size: 18px;
   }
 
   &__controls {
@@ -118,3 +142,49 @@
 .day--open .day-details {
   display: block;
 }
+
+
+@media (max-width: 700px) {
+  .day-details {
+
+    &__item {
+      padding-top: 5px;
+    }
+
+    &__controls-column {
+      margin-bottom: 20px;
+    }
+
+    &__prize-title {
+      font-size: 20px;
+    }
+
+    &>p:first-child {
+      font-size: 17px;
+      line-height: 24px;
+      margin: 10px 0 20px;
+    }
+
+    .day-details__item p {
+      font-size: 17px;
+      line-height: 24px;
+    }
+
+    .day-details__item h3 {
+      font-size: 20px;
+    }
+
+    .day-details__item h4 {
+      font-size: 17px;
+    }
+
+    .checkbox label {
+      font-size: 17px;
+    }
+  }
+
+  .js-close-day {
+    margin-bottom: 0 !important;
+  }
+}
+
