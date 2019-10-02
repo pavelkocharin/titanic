@@ -48,6 +48,15 @@
   }
 }
 
+@media (max-width: 1099px) {
+  .footer {
+
+    &__contacts {
+      width: 200px;
+    }
+  }
+}
+
 @media (max-width: 1023px) {
   .footer {
 

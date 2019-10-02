@@ -51,21 +51,21 @@
       padding: 15px 25px;
     }
   }
+}
 
-  &__to-goals {
-    display: block;
-    box-sizing: border-box;
-    margin: 65px 30px 30px 30px;
-    border: 1px solid $border-color;
-    border-radius: 5px;
-    padding: 15px 20px;
-    line-height: 25px;
-    font-family: 'FuturaPTBook';
-    color: $blue;
+.content .lk__to-goals {
+  display: block;
+  box-sizing: border-box;
+  margin: 57px 30px 30px 30px;
+  border: 1px solid $border-color;
+  border-radius: 5px;
+  padding: 15px 20px;
+  line-height: 20px;
+  font-family: 'FuturaPTBook';
+  color: $blue;
 
-    &:hover {
-      text-decoration: none;
-    }
+  &:hover {
+    text-decoration: none;
   }
 }
 

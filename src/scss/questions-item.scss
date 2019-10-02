@@ -31,13 +31,13 @@
     }
 
     &:after {
-      position: absolute;
-      top: 8px;
-      left: 100%;
+      display: inline-block;
+      vertical-align: top;
       transform-origin: 50% 50%;
       transform: rotate(-45deg);
       transition: .2s;
-      margin-left: 20px;
+      margin-top: 10px;
+      margin-left: 10px;
       border-right: 1px solid;
       border-bottom: 1px solid;
       width: 8px;
@@ -70,7 +70,7 @@
       line-height: 30px;
       font-size: 18px;
 
-      
+
       &:after {
         top: 5px;
         margin-left: 10px;

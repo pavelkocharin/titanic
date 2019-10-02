@@ -63,7 +63,7 @@
 
   <div class="alert alert--danger">
     Участие не оплачено.
-    <a class = "alert--link" href="#">Оплатить и пополнить баланс</a>
+    <a class = "alert--link" href="contacts.html">Оплатить и пополнить баланс</a>
   </div>
 
   <div class="alert alert--info">
@@ -76,13 +76,13 @@
 
   <div class="alert alert--warning">
     До окончания участия осталось менее 7 дней. Не прерывайте выполнение целей!
-    <a href="#">Пополните баланс</a> заранее.
+    <a href="contacts.html">Пополните баланс</a> заранее.
   </div>
 
   <div class="alert alert--basic">
     Ваш баланс: <strong>1000 руб.</strong>
     Участие оплачено до 20.10.2019.
-    <a href="#">Пополнить баланс</a>
+    <a href="contacts.html">Пополнить баланс</a>
   </div>
 
   <p class="tab">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt repellendus, sed modi culpa aliquid eum odio, incidunt vel libero quasi dolore explicabo! Provident alias voluptatibus, a repudiandae nesciunt exercitationem debitis?</p>
@@ -135,6 +135,8 @@
             <div class="day__progress-title">
               Прогресс дня
             </div>
+            <button type="button" class="day__progress-item day__progress-item--active"></button>
+            <button type="button" class="day__progress-item day__progress-item--active"></button>
             <button type="button" class="day__progress-item day__progress-item--active"></button>
             <button type="button" class="day__progress-item day__progress-item--active"></button>
             <button type="button" class="day__progress-item day__progress-item--active"></button>
@@ -368,6 +370,8 @@
               <button type="button" class="day__progress-item"></button>
               <button type="button" class="day__progress-item"></button>
               <button type="button" class="day__progress-item"></button>
+              <button type="button" class="day__progress-item"></button>
+              <button type="button" class="day__progress-item"></button>
             </div>
             <div class="day__points">
               Баллы за день:
@@ -521,6 +525,8 @@
           <div class="day__progress-title">
             Прогресс дня
           </div>
+          <button type="button" class="day__progress-item"></button>
+          <button type="button" class="day__progress-item"></button>
           <button type="button" class="day__progress-item"></button>
           <button type="button" class="day__progress-item"></button>
           <button type="button" class="day__progress-item"></button>
@@ -754,6 +760,8 @@
             <button type="button" class="day__progress-item"></button>
             <button type="button" class="day__progress-item"></button>
             <button type="button" class="day__progress-item"></button>
+            <button type="button" class="day__progress-item"></button>
+            <button type="button" class="day__progress-item"></button>
           </div>
           <div class="day__points">
             Баллы за день:
@@ -943,16 +951,16 @@
           <a href="goals.html" class="footer-nav__link">Ваши цели</a>
         </li>
         <li class="footer-nav__item hide-on-mobile">
-          <a href="text-article.html" class="footer-nav__link">СТАТЬИ</a>
+          <a href="contacts.html" class="footer-nav__link">Статьи</a>
         </li>
         <li class="footer-nav__item hide-on-mobile">
           <a href="contacts.html" class="footer-nav__link">Контакты</a>
         </li>
         <li class="footer-nav__item">
-          <a href="#" class="footer-nav__link">ПОЛЬЗОВАТЕЛЬСКОЕ СОГЛАШЕНИЕ</a>
+          <a href="contacts.html" class="footer-nav__link">Пользовательское соглашение</a>
         </li>
         <li class="footer-nav__item">
-          <a href="#" class="footer-nav__link">ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ</a>
+          <a href="contacts.html" class="footer-nav__link">Политика конфиденциальности</a>
         </li>
       </ul>
     </nav>
@@ -969,13 +977,13 @@
 </footer>
 
 <div class="payments">
-  <a href="#" class="payments__link">
+  <a href="https://kassa.yandex.ru" class="payments__link">
     <img src="./img/payments/yandexkassa.png" alt="яндекс-касса" class="payments__icon">
   </a>
-  <a href="#" class="payments__link">
+  <a href="https://www.robokassa.ru" class="payments__link">
     <img src="./img/payments/robokassa.png" alt="робокасса" class="payments__icon">
   </a>
-  <a href="#" class="payments__link">
+  <a href="https://www.webmoney.ru" class="payments__link">
     <img src="./img/payments/webmoney.png" alt="webmoney" class="payments__icon">
   </a>
   <a href="#" class="payments__link">
@@ -1056,7 +1064,7 @@
 
       </p>
 
-      <button class="button button--popup" type="submit">
+      <button class="button button--popup" type="button" data-popup-open="popup-password-restored">
         Далее
       </button>
     </form>

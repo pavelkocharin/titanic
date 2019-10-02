@@ -43,6 +43,8 @@
   }
 
   &__text {
+    height: 98px;
+    overflow: hidden;
     line-height: 24px;
     font-family: 'FuturaPTBook';
     font-size: 18px;
@@ -56,6 +58,7 @@
     border-radius: 5px;
     padding: 10px 30px 10px 15px;
     text-decoration: none;
+    text-transform: uppercase;
     font-family: 'FuturaPTBook';
     font-size: 13px;
     color: #3d7ab6;
