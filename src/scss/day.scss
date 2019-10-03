@@ -45,6 +45,9 @@
 
     &-title {
       width: 100px;
+      flex-basis: 100px;
+      flex-grow: 0;
+      overflow: hidden;
       font-family: 'FuturaPTBook';
       font-size: 16px;
       line-height: 1;

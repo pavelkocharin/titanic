@@ -14,10 +14,15 @@
     justify-content: space-between;
   }
 
+  &__link-wrapper {
+    margin: 18px 0;
+    text-align: center;
+  }
+
   &__link {
+    display: inline-block;
     background-color: #ecf1f7;
     border-radius: 5px;
-    margin: 18px auto 0;
     padding: 15px 36px 23px;
     font-family: 'FuturaPTBook';
     font-size: 30px;

@@ -18,6 +18,7 @@
     background: none;
     background-color: $third-grey;
     cursor: pointer;
+    overflow: visible;
 
     &:before,
     &:after {
