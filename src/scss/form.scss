@@ -46,6 +46,10 @@
     -moz-appearance: none;
   }
 
+  select::-ms-expand {
+    display: none;
+  }
+
   option {
     padding: 5px 20px;
   }
